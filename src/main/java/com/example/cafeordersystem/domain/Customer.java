@@ -27,7 +27,7 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    public static Customer nexCustomer(CreateCustomer createCustomer) {
+    public static Customer newCustomer(CreateCustomer createCustomer) {
         return new Customer(createCustomer.getName(), createCustomer.getAddress(), createCustomer.getPhoneNumber());
     }
 }
