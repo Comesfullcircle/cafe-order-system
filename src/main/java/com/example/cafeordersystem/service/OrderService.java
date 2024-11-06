@@ -37,6 +37,7 @@ public class OrderService {
                 throw new RuntimeException("재고가 없습니다.");
             }
             storeProduct.adjustStockQuantity(buyQuantity);
+            storeProducts.add(storeProduct); // 재고 관리를 위해 add 꼭  추가
         }
 
         Order entity = Order.newOrder(createOrder);
