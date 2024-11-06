@@ -21,6 +21,10 @@ public class OrderService {
     }
 
     public void newOrder(CreateOrder createOrder){
+        //customerId를 받는 부분도 있으니 ,Id 값을 받았을때 존재하지 않는 customer 라면 마찬가지로
+        //주문 받지 않게 로직 생성하기
+
+
         //재고 데이터를 고려하는 로직
         List<StoreProduct> storeProducts = new ArrayList<>();
 
